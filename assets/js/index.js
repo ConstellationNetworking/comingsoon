@@ -1,3 +1,5 @@
+let db = firebase.firestore();
+
 function smoothScrollAboveElement(elementId, offset) {
     const element = document.getElementById(elementId);
     if (element) {
@@ -8,6 +10,33 @@ function smoothScrollAboveElement(elementId, offset) {
             behavior: 'smooth'
         });
     }
+}
+
+function submitForm() {
+    email = document.getElementById('email').value;
+
+    if (!email) {
+        document.getElementById('email').placeholder = 'Please enter a valid email address';
+        return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        document.getElementById('email').value = '';
+        document.getElementById('email').placeholder = 'Please enter a valid email address';
+        return;
+    }
+
+    db.collection('ComingSoonSubscribers').add({
+        email: email,
+        timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+        browserInfo: navigator.userAgent
+    })
+    .then((docRef) => {
+        document.getElementById('email').value = '';
+        document.getElementById('email').placeholder = 'Thank you for subscribing!';
+        document.getElementById('submitBtn').innerHTML = 'Done!';
+    })
 }
 
 document.addEventListener('DOMContentLoaded', (event) => {

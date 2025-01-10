@@ -1,106 +1,106 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Open Positions</title>
-  <script src="/assets/dist/tailwind.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="preload" as="style" onload="this.rel='stylesheet'" href="/assets/css/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Positions</title>
+    <script src="/assets/dist/tailwind.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="/assets/css/index.css">
 
-  <meta name="description" content="Explore and apply for volunteer positions within Constellation Networking.">
-  <meta name="keywords"
-    content="Constellation Networking, volunteer positions, apply for volunteer, community involvement">
-  <meta name="author" content="Constellation Networking Team">
+    <meta name="description" content="Explore and apply for volunteer positions within Constellation Networking.">
+    <meta name="keywords"
+        content="Constellation Networking, volunteer positions, apply for volunteer, community involvement">
+    <meta name="author" content="Constellation Networking Team">
 
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FTXQ5HF0C5"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FTXQ5HF0C5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'G-FTXQ5HF0C5');
-  </script>
+        gtag('config', 'G-FTXQ5HF0C5');
+    </script>
 
-  <!-- Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-  <script src="assets/js/firebase_init.js"></script>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="assets/js/firebase_init.js"></script>
 </head>
 
 <body>
-  <div class="bg-white">
-    <div class="relative isolate px-6 pt-6 lg:px-8">
-      <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-        aria-hidden="true">
-        <div
-          class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+    <div class="bg-white">
+        <div class="relative isolate px-6 pt-6 lg:px-8">
+            <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+                aria-hidden="true">
+                <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+                    style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+                </div>
+            </div>
+            <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-48">
+                <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+                    <div
+                        class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                        Constellation is scheduled to launch on February 16, 2025. <a href="https://github.com/ConstellationNetworking" class="font-semibold text-indigo-600">
+                            <span class="absolute inset-0" aria-hidden="true"></span>Read more <span
+                                aria-hidden="true">&rarr;</span></a>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Constellation is coming soon
+                    </h1>
+                    <p class="mt-6 text-lg leading-8 text-gray-600">Interested in participating in the beta or want to
+                        take on a role? Pop your email below!</p>
+                        <div class="mt-10 flex items-center justify-center gap-4">
+                            <form class="flex items-center gap-4">
+                                <input type="email" id="email" placeholder="email@youremail.com"
+                                    class="input-field bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-80 sm:w-80">
+                                <button id="submitBtn" type="button" onclick="submitForm()" class="button-style bg-indigo-600 text-white text-sm font-semibold rounded-lg p-3 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-600">
+                                    Fill me in.
+                                </button>
+                            </form>
+                        </div>
+                </div>
+            </div>
+            <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+                aria-hidden="true">
+                <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+                    style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-48">
-        <div class="hidden sm:mb-8 sm:flex sm:justify-center">
-          <div
-            class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-            Constellation is scheduled to launch on February 16, 2025.. <a href="https://github.com/ConstellationNetworking"
-              class="font-semibold text-indigo-600">
-              <span class="absolute inset-0" aria-hidden="true"></span>Read more <span
-                aria-hidden="true">&rarr;</span></a>
-          </div>
-        </div>
-        <div class="text-center">
-          <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Constellation is coming soon</h1>
-          <p class="mt-6 text-lg leading-8 text-gray-600">Interested in participating in the beta or want to take on a role? Pop your email below!</p>
-          <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a style="cursor: pointer;" onclick="smoothScrollAboveElement('positions-table', 10)"
-              class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Read
-              more</a>
-            <a href="/about.html" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span
-                aria-hidden="true">→</span></a>
-          </div>
-        </div>
-      </div>
-      <div
-        class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-        aria-hidden="true">
-        <div
-          class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
-        </div>
-      </div>
     </div>
-  </div>
 
-  <div id="positions-table" class="select-none" style="padding-bottom: 50px;">
-    <div class="max-w-screen-xl mx-auto px-4 md:px-6">
-      <div class="items-start justify-between md:flex">
-        <div class="max-w-lg">
-          <h3 class="text-gray-800 text-xl font-bold sm:text-2xl">Open Roles</h3>
-          <p class="text-gray-600 mt-2">View and apply to Constellation's open positions here.</p>
+    <div id="positions-table" class="select-none" style="padding-bottom: 50px;">
+        <div class="max-w-screen-xl mx-auto px-4 md:px-6">
+            <div class="items-start justify-between md:flex">
+                <div class="max-w-lg">
+                    <h3 class="text-gray-800 text-xl font-bold sm:text-2xl">Open Roles</h3>
+                    <p class="text-gray-600 mt-2">View and apply to Constellation's open positions here.</p>
+                </div>
+            </div>
+            <div class="mt-12 relative h-max overflow-auto">
+                <table id="positions-table" class="w-full table-auto text-sm text-left">
+                    <thead class="text-gray-600 font-medium border-b">
+                        <tr>
+                            <th class="py-3 pr-6">Title</th>
+                            <th class="py-3 pr-6">About</th>
+                            <th class="py-3 pr-6">Weekly Commitment Hours</th>
+                            <th class="py-3 pr-6">Location</th>
+                            <th class="py-3 pr-6">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="positions-table-body" class="text-gray-600 divide-y">
+                        <!-- The table rows will be inserted here by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
         </div>
-      </div>
-      <div class="mt-12 relative h-max overflow-auto">
-        <table id="positions-table" class="w-full table-auto text-sm text-left">
-          <thead class="text-gray-600 font-medium border-b">
-            <tr>
-              <th class="py-3 pr-6">Title</th>
-              <th class="py-3 pr-6">About</th>
-              <th class="py-3 pr-6">Weekly Commitment Hours</th>
-              <th class="py-3 pr-6">Location</th>
-              <th class="py-3 pr-6">Action</th>
-            </tr>
-          </thead>
-          <tbody id="positions-table-body" class="text-gray-600 divide-y">
-            <!-- The table rows will be inserted here by JavaScript -->
-          </tbody>
-        </table>
-      </div>
     </div>
-  </div>
 </body>
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 <script src="/assets/js/index.js"></script>
